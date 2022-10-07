@@ -10,6 +10,23 @@
   background-color: $color;
 }
 
+@mixin circle() {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 3px solid red;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+@mixin circle-bg($circle-bg-color: red) {
+  background-color: $circle-bg-color;
+}
+
+@mixin circle-border($border-width: 5px, $border-color: green) {
+  border: $border-width solid $border-color;
+}
+
 .squares {
   width: 80%;
   border: 1px solid black;
@@ -33,4 +50,43 @@
 
 .square-purple {
   @include square-bg(purple);
+}
+
+.circles {
+  margin: 0 auto;
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.circle {
+  @include circle();
+}
+
+.circle-red {
+  @include circle-bg();
+}
+
+.circle-green {
+  @include circle-bg(green);
+}
+
+.circle-blue {
+  @include circle-bg(blue);
+}
+
+.circle-border-blue {
+  @include circle-border(2px, blue);
+}
+
+// am mai adaugat 2 clase in plus fata de cerinte,
+// just for practice with mixin & variables :)
+.circle-border-green {
+  @include circle-border();
+}
+
+.circle-border-red {
+  @include circle-border(4px, black);
 }
