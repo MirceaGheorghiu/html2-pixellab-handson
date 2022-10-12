@@ -12,8 +12,35 @@
 
 $borders: dotted, solid, dashed, double, none;
 
+// cand initializam expression cu mai multe perechi "key-value", trebuie imbracate intre ()
+$m-sizes: (
+  'xs': 4px,
+  'sm': 8px,
+  'md': 16px,
+  'lg': 32px,
+);
+
+$p-sizes: (
+  'xs': 4px,
+  'sm': 8px,
+  'md': 16px,
+  'lg': 32px,
+);
+
 @each $borderStyle in $borders {
   .b-#{$borderStyle} {
     border-style: $borderStyle;
+  }
+}
+
+@each $size, $value in $m-sizes {
+  .m-#{$size} {
+    margin: $value;
+  }
+}
+
+@each $size, $value in $p-sizes {
+  .p-#{$size} {
+    padding: $value;
   }
 }

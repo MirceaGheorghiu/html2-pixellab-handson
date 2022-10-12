@@ -6,4 +6,14 @@
 
 @include btn-class('.btn-primary', 'color', purple);
 
+// atunci cand suprascriem variabila $property in @include,
+// am observat ca putem sa folosim numele unei proprietati din css si fara ''
+@include btn-class('.btn-secondary', color, blue);
+
 @include btn-class('.btn-inverted', 'background-color', transparent);
+
+@include btn-class('.btn-inverted-light', background-color, lightgray);
+
+@include btn-class('.btn-tertiary', 'color', green);
+
+@include btn-class('.btn-text-gray', color, gray);
