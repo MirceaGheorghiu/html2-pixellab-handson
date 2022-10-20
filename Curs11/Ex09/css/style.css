@@ -36,3 +36,43 @@
 .grid-item-5 {
   grid-column: 1 / span 2;
 }
+
+.gc-1 .grid-item-4 {
+  order: -1;
+}
+
+.gc-1 .grid-item-1 {
+  order: -1;
+}
+
+.gc-2 .grid-item-4 {
+  order: -1;
+}
+
+.gc-2 .grid-item-2 {
+  order: 2;
+}
+
+.gc-2 .grid-item-1 {
+  order: 3;
+}
+
+.gc-3 .grid-item-2 {
+  order: 1;
+}
+
+.gc-3 .grid-item-1 {
+  order: 2;
+}
+
+.gc-3 .grid-item-4 {
+  order: 3;
+}
+
+.gc-4 .grid-item-3 {
+  order: 1;
+}
+
+.gc-4 .grid-item-2 {
+  order: 2;
+}
