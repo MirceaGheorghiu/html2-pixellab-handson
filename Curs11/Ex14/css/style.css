@@ -24,6 +24,7 @@
 /* can't touch this 🔨 */
 
 .grid-container {
+  grid-template-rows: repeat(4, 200px);
   display: grid;
   grid-template-areas:
     'header'

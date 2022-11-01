@@ -23,7 +23,7 @@
   grid-row: 3 / 4;
 }
 
-.grid-container :nth-child(4) {
+.grid-container :last-child {
   background-color: lightcoral;
   grid-column: 2 / 3;
   grid-row: 8 / 10;
